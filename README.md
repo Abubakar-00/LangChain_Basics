@@ -1,6 +1,7 @@
-# LangChain Crash Course
+# LangChain Basics
 
-Welcome to the LangChain Crash Course repository! This repo contains all the code examples you'll need to follow along with the LangChain Master Class for Beginners video. By the end of this course, you'll know how to use LangChain to create your own AI agents, build RAG chatbots, and automate tasks with AI.
+This whole code base is adopted from "codewithbrandon". I have used OpenAI Free alternatives such as GoogleGenAI and Groq Api's.
+I have adopted GoogleGenAI Embedder-01, Gemnini Flash 1.5 (LLM) and Groq Mistral 8x7B (LLM).
 
 ## Course Outline
 
@@ -22,33 +23,49 @@ Welcome to the LangChain Crash Course repository! This repo contains all the cod
 
 1. Clone the repository:
 
+   Brandon's Repository
+
    ```bash
    <!-- TODO: UPDATE TO MY  -->
    git clone https://github.com/bhancockio/langchain-crash-course
    cd langchain-crash-course
    ```
+   My Repository:
 
-2. Install dependencies using Poetry:
+   ```bash
+   https://github.com/Abubakar-00/LangChain_Basics.git
+   ```
+
+3. Install dependencies using Poetry or Requirements file:
 
    ```bash
    poetry install --no-root
    ```
 
-3. Set up your environment variables:
-
-   - Rename the `.env.example` file to `.env` and update the variables inside with your own values. Example:
-
+   If you want to install dependencies from requirement file.
+   
    ```bash
-   mv .env.example .env
+   pip install -r requirements. txt
    ```
 
-4. Activate the Poetry shell to run the examples:
+4. Set up your environment variables:
+
+   - Just open .env files and paste your API keys without quotation.
+
+   ```bash
+   TAVILY_API_KEY=ADD_KEY_HERE
+   TAVILY_API_KEY=Example1234
+   ```
+
+   
+
+5. Activate the Poetry shell to run the examples (Depends upon your preference):
 
    ```bash
    poetry shell
    ```
 
-5. Run the code examples:
+6. Run the code examples:
 
    ```bash
     python chat_models/1_chat_model_basic.py
@@ -111,41 +128,6 @@ Explore the technologies like documents, embeddings, and vector stores that enab
   - `1_tool_constructor.py`
   - `2_tool_decorator.py`
   - `3_tool_base_tool.py`
-
-Learn about agents, how they work, and how to build custom tools to enhance their capabilities.
-
-## How to Use This Repository
-
-1. **Watch the Video:** Start by watching the LangChain Master Class for Beginners video on YouTube at 2X speed for a high-level overview.
-
-2. **Run the Code Examples:** Follow along with the code examples provided in this repository. Each section in the video corresponds to a folder in this repo.
-
-3. **Join the Community:** If you get stuck or want to connect with other AI developers, join the FREE Skool community [here](https://www.skool.com/ai-developer-accelerator/about).
-
-## Comprehensive Documentation
-
-Each script in this repository contains detailed comments explaining the purpose and functionality of the code. This will help you understand the flow and logic behind each example.
-
-## FAQ
-
-**Q: What is LangChain?**  
-A: LangChain is a framework designed to simplify the process of building applications that utilize language models.
-
-**Q: How do I set up my environment?**  
-A: Follow the instructions in the "Getting Started" section above. Ensure you have Python 3.10 or 3.11 installed, install Poetry, clone the repository, install dependencies, rename the `.env.example` file to `.env`, and activate the Poetry shell.
-
-**Q: I am getting an error when running the examples. What should I do?**  
-A: Ensure all dependencies are installed correctly and your environment variables are set up properly. If the issue persists, seek help in the Skool community or open an issue on GitHub.
-
-**Q: Can I contribute to this repository?**  
-A: Yes! Contributions are welcome. Please open an issue or submit a pull request with your changes.
-
-**Q: Where can I find more information about LangChain?**  
-A: Check out the official LangChain documentation and join the Skool community for additional resources and support.
-
-## Support
-
-If you encounter any issues or have questions, feel free to open an issue on GitHub or ask for help in the Skool community.
 
 ## License
 
